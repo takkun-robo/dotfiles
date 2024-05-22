@@ -6,5 +6,5 @@
 
 i renamed this reposiroty 'musical-train' to 'dotfiles' because that was not easy to understand what is this repository.
 
-to me in future: i think if this repo's name is 'musical-muscle' , that is funny. would you like to add an musical-muscle ascii art to this readme?
+to me in the future: i think if this repo's name is 'musical-muscle' , that is funny. would you like to add an musical-muscle ascii art to this readme?
 
