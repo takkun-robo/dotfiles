@@ -9,6 +9,7 @@ load_ros_setup_if_enable() {
 
 	case ${is_enable_load_ros_setup_script} in
 		true )
+#TODO:スクリプト内/関数内でsourceしても呼び出し元には反映されない
 		source ${ros_setup_script_path}/setup.bash
 		;;
 		false )

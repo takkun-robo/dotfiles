@@ -36,5 +36,7 @@ alias reload='source ~/.bashrc'
 if source ~/dotfiles/bash_etc/ros.bash;
 then
 	load_ros_setup_if_enable
+#TODO: this echo is for debug. if debugging is done, remove this echo.
+	echo 'load_ros_setup_if_enable() is called.'
 fi
 
