@@ -1,5 +1,4 @@
 " my .vimrc file
-" this is from https://qiita.com/morikooooo/items/9fd41bcd8d1ce9170301 .
 
 " setting
 " 文字コードをUFT-8に設定
