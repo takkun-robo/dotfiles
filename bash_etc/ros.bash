@@ -4,19 +4,17 @@
 
 is_enable_load_ros_setup_script=false
 
-load_ros_setup_if_enable() {
-	local ros_setup_script_path=/opt/ros/iron 
 
-	case ${is_enable_load_ros_setup_script} in
-		true )
-		source ${ros_setup_script_path}/setup.bash
-		;;
-		false )
-		;;
-		* )
-		;;
-	esac
-}
+case ${is_enable_load_ros_setup_script} in
+	true )
+	source /opt/ros/iron/setup.bash
+	;;
+	false )
+	;;
+	* )
+	;;
+esac
+
 
 switch_load_ros_setup() {
 	local usage='usage: switch_load_ros_setup [yes|no|help]. help for more help.'
