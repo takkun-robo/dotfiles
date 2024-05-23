@@ -30,8 +30,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gsh='git push'
-alias gll='git pull'
+alias gpsh='git push'
+alias gpll='git pull'
 
 alias reload='source ~/.bashrc'
 
