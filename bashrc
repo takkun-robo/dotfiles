@@ -29,6 +29,7 @@ alias ga='git add'
 alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
+alias gcm='git commit -m'
 
 alias reload='source ~/.bashrc'
 
