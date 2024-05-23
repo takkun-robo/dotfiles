@@ -4,9 +4,8 @@
 
 is_enable_load_ros_setup_script=false
 
-load_ros_setup_if_enable() {
-	local ros_setup_script_path=/opt/ros/iron 
 
+<<<<<<< HEAD
 	case ${is_enable_load_ros_setup_script} in
 		true )
 #TODO:スクリプト内/関数内でsourceしても呼び出し元には反映されない
@@ -18,6 +17,18 @@ load_ros_setup_if_enable() {
 		;;
 	esac
 }
+=======
+case ${is_enable_load_ros_setup_script} in
+	true )
+	source /opt/ros/iron/setup.bash
+	;;
+	false )
+	;;
+	* )
+	;;
+esac
+
+>>>>>>> fe9938e18cff53dc55ec7ed7557a9ef893be73cf
 
 switch_load_ros_setup() {
 	local usage='usage: switch_load_ros_setup [yes|no|help]. help for more help.'
