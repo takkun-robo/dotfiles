@@ -30,6 +30,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
 alias gcm='git commit -m'
+alias gf='git fetch'
+alias gm='git merge'
 alias gpsh='git push'
 alias gpll='git pull'
 
