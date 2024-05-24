@@ -73,3 +73,7 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+
+" mouse
+set mouse=a
+set ttymouse=xterm2
