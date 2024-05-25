@@ -15,7 +15,7 @@ alias t='touch'
 
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+#alias rm='rm -i'
 
 alias v='vim'
 alias vd='vimdiff'
