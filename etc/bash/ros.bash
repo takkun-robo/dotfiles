@@ -1,4 +1,8 @@
 
+# 下にいろいろ書いてるけど諦めてaliasを定義するだけにする
+alias ros_setup='source /opt/ros/iron/setup.bash'
+
+<<'COMMENT'
 # Switch whether to load the ros setup script when bash starts
 # マシンを再起動するたびにswitch_load_ros_setupを呼び出して読み込む設定にしないとrosのsetup.bashが読み込まれないようにしてる
 
@@ -53,4 +57,5 @@ switch_load_ros_setup() {
 	esac
 	
 }
+COMMENT
 
