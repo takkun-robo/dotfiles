@@ -2,7 +2,7 @@
 # Switch whether to load the ros setup script when bash starts
 # マシンを再起動するたびにswitch_load_ros_setupを呼び出して読み込む設定にしないとrosのsetup.bashが読み込まれないようにしてる
 
-is_enable_load_ros_setup_script=false
+#is_enable_load_ros_setup_script=false
 
 
 #TODO:スクリプト内/関数内でsourceしても呼び出し元には反映されない?
