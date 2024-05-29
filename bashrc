@@ -37,6 +37,10 @@ alias gpll='git pull'
 
 alias reload='source ~/.bashrc'
 
+# disable ^S to stop and ^Q to start
+stty stop undef
+stty start undef
+
 # load ros setup script if you want
 #if source ~/dotfiles/bash_etc/ros.bash;
 #then
