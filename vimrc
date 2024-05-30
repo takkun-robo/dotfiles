@@ -32,6 +32,8 @@ set number
 set virtualedit=onemore
 " インデントはスマートインデント
 set smartindent
+" 自動コメントアウトを無効にする
+set formatoptions-=ro
 " ビープ音を可視化
 set visualbell
 " 括弧入力時の対応する括弧を表示
