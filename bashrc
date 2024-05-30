@@ -3,6 +3,8 @@
 # load aliases
 source ~/dotfiles/alias
 
+alias reload='source ~/.bashrc'
+
 # disable ^S to stop and ^Q to start
 stty stop undef
 stty start undef
