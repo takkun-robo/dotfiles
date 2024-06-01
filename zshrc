@@ -8,6 +8,9 @@ setopt IGNORE_EOF
 # disable ^S to stop and ^Q to start
 setopt no_flow_control
 
+# set editor to vim
+export EDITOR=vim
+
 # use emacs-like keybind
 bindkey -e
 
@@ -43,8 +46,23 @@ zstyle ':zle:*' word-style unspecified
 
 
 
-# プロンプトを2行で表示、時刻を表示
-# PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})%n${reset_color}@${fg[blue]}%m${reset_color}(%*%) %~%# "
+# git設定
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+
+# show user name, server name, current direcctory, git info, and the user is root or not on left prompt
+# show the time the command was executed
+NEWLINE=$'\n'
+PROMPT="%F{green}%n@%m %f%F{blue}%~%f%F{white} > ${vcs_info_msg_0_} ${NEWLINE}%# %f"
+#RPROMPT="%F{greem}%D{%Y-%m-%d %H:%M:%S}%f"
+RPROMPT="%F{green}%D{%m-%d %H:%M}%f"
+
 
 # 補完後、メニュー選択モードになり左右キーで移動が出来る
 zstyle ':completion:*:default' menu select=2
@@ -86,17 +104,6 @@ function mkcd() {
 	fi
 }
 
-# git設定
-RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
-autoload -Uz vcs_info
-setopt prompt_subst
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
-zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd () { vcs_info }
-RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 
 # load my aliases
