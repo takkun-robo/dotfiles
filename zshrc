@@ -50,17 +50,17 @@ zstyle ':zle:*' word-style unspecified
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!%f"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+%f"
+zstyle ':vcs_info:*' formats "%F{blue}[%b]%f%u%c"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 
 # show user name, server name, current direcctory, git info, and the user is root or not on left prompt
-# show the time the command was executed
+# show the time the command was executed on right
 NEWLINE=$'\n'
-PROMPT="%F{green}%n@%m %f%F{blue}%~%f%F{white} > ${vcs_info_msg_0_} ${NEWLINE}%# %f"
-#RPROMPT="%F{greem}%D{%Y-%m-%d %H:%M:%S}%f"
+PROMPT="${NEWLINE}%F{green}%n@%m %f%F{blue}%~%f%F{white} > %f${vcs_info_msg_0_}${NEWLINE}%F{white}%# %f"
+#RPROMPT="%F{green}%D{%Y-%m-%d %H:%M:%S}%f"
 RPROMPT="%F{green}%D{%m-%d %H:%M}%f"
 
 
