@@ -10,3 +10,8 @@ else
 endif
 EOF
 
+cat - << 'EOF'
+external colorscheme is not installed!
+execute to install: git clone git@github.com:preservim/vim-colors-pencil.git
+EOF
+
