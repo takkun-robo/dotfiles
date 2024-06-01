@@ -42,7 +42,7 @@ set smartindent
 " 自動コメントアウトを無効にする
 set formatoptions-=ro
 " ビープ音を可視化
-set visualbell
+"set visualbell
 " 括弧入力時の対応する括弧を表示
 set showmatch
 " ステータスラインを常に表示
@@ -59,7 +59,7 @@ colorscheme koehler
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
-"set list listchars=tab:\▸\-
+set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
 "set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
@@ -86,3 +86,4 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " mouse
 set mouse=a
 set ttymouse=xterm2
+
