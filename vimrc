@@ -20,6 +20,13 @@ set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
 
+" status line setting
+" show buffer number, full path to file, modified flag, readonly falg, help buffer flag, preview window flag on left
+" show filetype, encodings, fileformat(newline style) on left.
+" show char code at cursor, cursor position on right.
+" show help for :help statusline
+" i used this page for reference: https://maku77.github.io/vim/settings/statusline.html
+set statusline=[%n]:%F%M%r%h%w\ %<[%Y][%{&fenc!=''?&fenc:&enc}][%{&ff}]\ %=[%l/%L(%p%%)\,%02v][CODE=0x%04B]
 
 " 見た目系
 " 行番号を表示
