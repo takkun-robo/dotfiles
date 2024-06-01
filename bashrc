@@ -5,6 +5,9 @@ source ~/dotfiles/alias
 
 alias reload='source ~/.bashrc'
 
+# disable ^D to exit
+set -o ignoreeof
+
 # disable ^S to stop and ^Q to start
 stty stop undef
 stty start undef
