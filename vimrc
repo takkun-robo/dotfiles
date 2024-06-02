@@ -55,17 +55,21 @@ set wildmode=list:longest
 " シンタックスハイライトの有効化
 syntax enable
 " set colorscheme
-"colorscheme koehler
 set background=dark
-colorscheme pencil
+"set colorscheme 'pencil' if it exists
+if filereadable(expand('~/.vim/colors/pencil.vim'))
+	colorscheme pencil
+else
+	colorscheme koehler
+endif
 
 
 " 不可視文字を可視化(タブが「▸-」と表示される)
 " i refered this web site: https://qiita.com/pollenjp/items/459a08a2cc59485fa08b
 set list listchars=tab:\▸\-,trail:-,eol:↲,extends:»,precedes:«
 " EOL,extends,precedesを灰色,tab,trailを灰色にする
-hi NonText		ctermbg=None ctermfg=236
-hi SpecialKey	ctermbg=None ctermfg=236
+hi NonText		ctermbg=None ctermfg=238
+hi SpecialKey	ctermbg=None ctermfg=237
 " Tab文字を半角スペースにする
 "set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
