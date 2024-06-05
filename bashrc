@@ -12,6 +12,10 @@ set -o ignoreeof
 stty stop undef
 stty start undef
 
+# ^W to delete word with separator included '/'
+stty werase undef
+bind '"\C-w":unix-filename-rubout'
+
 # load ros setup script if you want
 #if source ~/dotfiles/bash_etc/ros.bash;
 #then
