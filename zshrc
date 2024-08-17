@@ -59,9 +59,9 @@ precmd () { vcs_info }
 # show user name, server name, current direcctory, git info, and the user is root or not on left prompt
 # show the time the command was executed on right
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%F{green}%n@%m %f%F{blue}%~%f%F{white} > %f${vcs_info_msg_0_}${NEWLINE}%F{white}%# %f"
+PROMPT="${NEWLINE}%F{046}%n@%m%f %F{white}%f%F{012}%~%f%F{white} > %f${vcs_info_msg_0_}${NEWLINE}%F{white}%# %f"
 #RPROMPT="%F{green}%D{%Y-%m-%d %H:%M:%S}%f"
-RPROMPT="%F{green}%D{%m-%d %H:%M}%f"
+RPROMPT="%F{046}%D{%m-%d %H:%M}%f"
 
 
 # 補完後、メニュー選択モードになり左右キーで移動が出来る
