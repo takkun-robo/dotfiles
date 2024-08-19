@@ -9,6 +9,8 @@ endif
 " setting
 " 文字コードをUFT-8に設定
 set fenc=utf-8
+" set End of Line Code
+set fileformats=unix,dos,mac
 " バックアップファイルを作らない
 set nobackup
 " スワップファイルを作らない

@@ -23,5 +23,5 @@ bind '"\C-w":unix-filename-rubout'
 #TODO: this echo is for debug. if debugging is done, remove this echo.
 #	echo 'load_ros_setup_if_enable() is called.'
 #fi
-source ~/dotfiles/etc/bash/ros.bash;
+#source ~/dotfiles/etc/bash/ros.bash;
 
