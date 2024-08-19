@@ -45,3 +45,5 @@ alias gm='git merge'
 alias gpsh='git push'
 alias gpll='git pull'
 
+# alias to setup enviroment variables for esp-idf
+alias setup_esp-idf='source $HOME/esp/esp-idf/export.sh'
