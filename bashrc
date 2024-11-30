@@ -18,5 +18,5 @@ bind '"\C-w":unix-filename-rubout'
 
 # customization of prompt
 #PS1="\e]0;\w\a\n\e[32m\u@\h \e[33m\w\e[0m\n\$ "
-PS1='\e]0;\w\a\n\e[38;5;46m\u@\h \e[38;5;33m\w\e[0m > \n\$ '
+PS1='\e]0;\w\a\n\e[38;5;46m\u@\h \e[38;5;27m\w\e[0m > \n\$ '
 
